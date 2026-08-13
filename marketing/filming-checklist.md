@@ -12,7 +12,7 @@ Use vertical video only.
 6. Person putting litter in bag, 4 seconds.
 7. Full bag tied, 3 seconds.
 8. Phone showing before/after upload idea, 3 seconds.
-9. Older father/grandfather holding or using kit, 4 seconds.
+9. Older father/grandfather holding or using pack, 4 seconds.
 10. Final product shot with clean place behind it, 4 seconds.
 
 ## Simple Filming Rules

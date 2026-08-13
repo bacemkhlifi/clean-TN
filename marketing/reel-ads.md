@@ -6,7 +6,7 @@ Length: 25 seconds
 
 Format: vertical 9:16
 
-Goal: convince people to buy the kit today.
+Goal: convince people to buy the pack today.
 
 Audience: house owners, shop owners, families, and people who want to help Tunisia look cleaner.
 
@@ -21,7 +21,7 @@ Do not sell only a trash grabber. Sell a simple action:
 ```text
 شنوة يصير كان كل واحد فينا ينظّف 10 دقايق قدّام دارو؟
 
-مع Ndhaf Tounes Kit، عندك عصا التقاط، قفازات، وأكياس.
+مع Ndhaf Tounes Pack، عندك عصا التقاط، قفازات، وأكياس.
 
 تنظّف بلا ما تلمس الزبلة، بلا تعب، وبطريقة سهلة.
 
@@ -30,7 +30,7 @@ Do not sell only a trash grabber. Sell a simple action:
 ما عندكش وقت؟ أهديها لبوك ولا جدك.
 
 نظّف قدّام دارك، تونس تولّي أنظف.
-اطلب الكيت اليوم.
+اطلب الباك اليوم.
 ```
 
 ### On-Screen Text
@@ -39,11 +39,11 @@ Use big captions, 2-5 words each:
 
 ```text
 تونس تبدأ من قدّام دارك
-Kit فيه عصا + قفازات + أكياس
+Pack فيه عصا + قفازات + أكياس
 تنظّف بلا ما تلمس الزبلة
 كيس معمّر = نقاط
 صوّر قبل / بعد
-اطلب الكيت اليوم
+اطلب الباك اليوم
 ```
 
 ### Scene Timeline
@@ -51,7 +51,7 @@ Kit فيه عصا + قفازات + أكياس
 | Time | Shot | Notes |
 | --- | --- | --- |
 | 0-2s | Quick dirty corner before shot | Add text: "تونس تبدأ من قدّام دارك" |
-| 2-5s | Show the kit on a table | Grabber, gloves, bags must be clear |
+| 2-5s | Show the pack on a table | Grabber, gloves, bags must be clear |
 | 5-10s | Person picks litter with grabber | Close shot of tool working |
 | 10-14s | Full bag tied and placed aside | Show progress and satisfaction |
 | 14-18s | Phone with before/after photos | This explains the points platform |
@@ -78,7 +78,7 @@ Kit فيه عصا + قفازات + أكياس
 ما تستناش شكون ينظّف.
 10 دقايق قدّام دارك تنجم تبدّل الحومة.
 
-مع Ndhaf Tounes Kit: عصا التقاط، قفازات، أكياس، وتحدّي نقاط.
+مع Ndhaf Tounes Pack: عصا التقاط، قفازات، أكياس، وتحدّي نقاط.
 
 نظّف قدّام دارك، تونس تولّي أنظف.
 ```
@@ -105,7 +105,7 @@ Length: 20 seconds
 ```text
 ما عندكش وقت تنظّف قدّام دارك؟
 
-أهدي Ndhaf Tounes Kit لبوك ولا جدك.
+أهدي Ndhaf Tounes Pack لبوك ولا جدك.
 
 حركة خفيفة، نشاط، وفرحة بالمساهمة.
 
@@ -116,8 +116,8 @@ Length: 20 seconds
 
 ### Visuals
 
-1. Son gives the kit to father.
-2. Father opens the kit.
+1. Son gives the pack to father.
+2. Father opens the pack.
 3. Father uses grabber safely.
 4. Before/after shot.
 5. Product + order CTA.
@@ -137,7 +137,7 @@ Length: 20 seconds
 ```text
 حانوتك يبان أنظف، الناس تثق أكثر.
 
-مع Shop Kit، نظّف قدّام الواجهة كل صباح في 10 دقايق.
+مع Shop Pack، نظّف قدّام الواجهة كل صباح في 10 دقايق.
 
 عصا التقاط، قفازات، وأكياس.
 
@@ -150,4 +150,4 @@ Length: 20 seconds
 2. Owner cleans quickly.
 3. Clean storefront after.
 4. Sticker or product pack.
-5. CTA: "اطلب Shop Kit".
+5. CTA: "اطلب Shop Pack".

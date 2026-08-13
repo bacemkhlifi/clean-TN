@@ -21,11 +21,11 @@ Page name: **Ndhaf Tounes - نظّف تونس**
 
 Bio:
 
-> نظّف قدّام دارك، تونس تولّي أنظف. Kit de nettoyage + challenge points pour maisons, commerces, familles et associations.
+> نظّف قدّام دارك، تونس تولّي أنظف. Pack de nettoyage + challenge points pour maisons, commerces, familles et associations.
 
 About:
 
-> Ndhaf Tounes est un projet citoyen et pratique: on fournit un kit simple avec pince de ramassage, gants et sacs pour nettoyer devant sa maison, son commerce ou son quartier. Chaque sac rempli peut devenir des points sur notre plateforme avec des photos avant/après. Le but: rendre la Tunisie plus propre, rue par rue.
+> Ndhaf Tounes est un projet citoyen et pratique: on fournit un pack simple avec pince de ramassage, gants et sacs pour nettoyer devant sa maison, son commerce ou son quartier. Chaque sac rempli peut devenir des points sur notre plateforme avec des photos avant/après. Le but: rendre la Tunisie plus propre, rue par rue.
 
 CTA button: **Send WhatsApp Message** or **Shop Now**
 
@@ -43,7 +43,7 @@ Name: **Ndhaf Tounes | نظّف تونس**
 
 Bio:
 
-> Kit nettoyage + challenge points  
+> Pack nettoyage + challenge points  
 > نظّف قدّام دارك، تونس تولّي أنظف  
 > Avant/Après | Familles | Commerces  
 > Commander par WhatsApp
@@ -54,13 +54,13 @@ First post caption:
 >
 > الفكرة بسيطة: نظّف قدّام دارك، حانوتك، ولا حومتك. صوّر قبل وبعد. عمّر كيس. اربح نقاط.  
 >
-> Le kit contient: pince de ramassage, gants, sacs et accès plateforme.
+> Le pack contient: pince de ramassage, gants, sacs et accès plateforme.
 >
 > #NdhafTounes #TunisiePropre #تونس_نظيفة #CleanTunisia
 
 Story highlights:
 
-- Kits
+- Packs
 - Avant/Après
 - Points
 - Familles
@@ -73,7 +73,7 @@ Name: **Ndhaf Tounes**
 Bio:
 
 > 10 دقايق قدّام دارك = حومة أنظف  
-> Kits + points + avant/après  
+> Packs + points + avant/après  
 > تونس تبدأ من عندك
 
 First TikTok caption:
@@ -83,7 +83,7 @@ First TikTok caption:
 ## First 7 Content Ideas
 
 1. Before/after in front of a house: "10 دقايق بدّلوا البلاصة".
-2. Product kit unboxing: grabber, gloves, bags, QR.
+2. Product pack unboxing: grabber, gloves, bags, QR.
 3. Retired father/grandfather angle: "هدية تخليه يتحرك ويعاون".
 4. Shop owner angle: clean storefront before opening.
 5. Points explanation: full bag + before/after = points.

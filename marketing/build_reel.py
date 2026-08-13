@@ -106,7 +106,7 @@ def draw_end_card(frame):
     draw.text((W / 2, 1415), shape("نظّف قدّام دارك"), font=font(64, bold=True), fill=(15, 93, 67), anchor="mm")
     draw.text((W / 2, 1500), shape("تونس تولّي أنظف"), font=font(58, bold=True), fill=(215, 25, 32), anchor="mm")
     draw_rounded_box(draw, (208, 1568, W - 208, 1648), 18, (215, 25, 32, 255))
-    draw.text((W / 2, 1610), shape("اطلب الكيت اليوم"), font=font(38, bold=True), fill="white", anchor="mm")
+    draw.text((W / 2, 1610), shape("اطلب الباك اليوم"), font=font(38, bold=True), fill="white", anchor="mm")
     return Image.alpha_composite(frame.convert("RGBA"), overlay).convert("RGB")
 
 
@@ -122,7 +122,7 @@ scenes = [
     {
         "path": "scene-02-kit.png",
         "duration": 4.0,
-        "main": "Kit فيه عصا التقاط + قفازات + أكياس",
+        "main": "Pack فيه عصا التقاط + قفازات + أكياس",
         "sub": "Simple, propre, facile à utiliser",
         "position": "bottom",
         "shift": (0.0, 0.0),
@@ -147,7 +147,7 @@ scenes = [
         "path": "scene-04-after.png",
         "duration": 6.0,
         "main": "نظّف قدّام دارك، تونس تولّي أنظف",
-        "sub": "اطلب الكيت اليوم",
+        "sub": "اطلب الباك اليوم",
         "position": "top",
         "shift": (0.02, 0.0),
         "end": True,

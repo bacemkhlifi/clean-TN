@@ -2,21 +2,21 @@ import Image from "next/image";
 
 const packages = [
   {
-    name: "Starter Kit",
+    name: "Starter Pack",
     ar: "للبداية قدّام دارك",
     price: "39 د.ت",
     items: ["1 عصا التقاط", "1 زوج قفازات", "5 أكياس قوية", "QR للمنصة"],
     tag: "Pour particuliers",
   },
   {
-    name: "Family Kit",
+    name: "Family Pack",
     ar: "للعائلة والحومة",
     price: "69 د.ت",
     items: ["2 عصي التقاط", "2 أزواج قفازات", "15 كيس", "تحدّي عائلي"],
     tag: "Le plus demandé",
   },
   {
-    name: "Shop Kit",
+    name: "Shop Pack",
     ar: "للحوانت والكافيهات",
     price: "59 د.ت",
     items: ["1 عصا التقاط", "1 زوج قفازات", "20 كيس", "Sticker واجهة نظيفة"],
@@ -32,7 +32,7 @@ const packages = [
 ];
 
 const steps = [
-  ["Acheter le kit", "اختار الباك اللي يناسبك"],
+  ["Acheter le pack", "اختار الباك اللي يناسبك"],
   ["Nettoyer 10 minutes", "نظّف قدّام دارك، حانوتك، ولا حومتك"],
   ["Photo avant / après", "صوّر قبل وبعد باش نثبتو الخدمة"],
   ["Gagner des points", "كل كيس معمّر يعطيك نقاط ومكانة في الترتيب"],
@@ -68,13 +68,13 @@ export default function Home() {
             <span className="eyebrow">تحدّي نظّف قدّام دارك</span>
             <h1>نظّف قدّام دارك، تونس تولّي أنظف.</h1>
             <p>
-              Un kit simple pour nettoyer devant votre maison, boutique ou
+              Un pack simple pour nettoyer devant votre maison, boutique ou
               quartier: pince de ramassage, gants, sacs, photos avant/après et
               points sur notre plateforme.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#order">
-                اطلب الكيت
+                اطلب الباك
               </a>
               <a className="button secondary" href="#how">
                 Comment ça marche
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="hero-media">
             <Image
               src="/clean-tunisia-hero.png"
-              alt="Kit de nettoyage avec pince, gants et sacs utilisé dans une rue tunisienne"
+              alt="Pack de nettoyage avec pince, gants et sacs utilisé dans une rue tunisienne"
               fill
               priority
               sizes="(max-width: 900px) 100vw, 52vw"
@@ -107,7 +107,7 @@ export default function Home() {
         <p>
           Le message est simple: si chaque personne nettoie devant sa porte,
           son magasin ou son immeuble, la Tunisie devient plus propre rue par
-          rue. Le kit transforme cette action en activité facile, utile et même
+          rue. Le pack transforme cette action en activité facile, utile et même
           agréable pour la famille.
         </p>
       </section>
@@ -116,13 +116,13 @@ export default function Home() {
         <div className="kit-image">
           <Image
             src="/kit-product.png"
-            alt="Ndhaf Tounes kit avec pince de ramassage, gants, sacs et carte QR"
+            alt="Ndhaf Tounes pack avec pince de ramassage, gants, sacs et carte QR"
             fill
             sizes="(max-width: 900px) 100vw, 46vw"
           />
         </div>
         <div>
-          <p className="section-kicker">Dans chaque kit</p>
+          <p className="section-kicker">Dans chaque pack</p>
           <h2>كل باك فيه نفس العصا القوية</h2>
           <p>
             Les différences entre packages sont le nombre de pinces, gants,
@@ -141,7 +141,7 @@ export default function Home() {
       <section className="section how" id="how">
         <div className="section-heading">
           <p className="section-kicker">Comment ça marche</p>
-          <h2>من الكيت إلى النقاط في 4 خطوات</h2>
+          <h2>من الباك إلى النقاط في 4 خطوات</h2>
         </div>
         <div className="steps">
           {steps.map(([fr, ar], index) => (
@@ -230,7 +230,7 @@ export default function Home() {
           <h2>Prêt باش تبدأ تحدّي النظافة؟</h2>
           <p>
             Version lancement: commande par téléphone ou WhatsApp, paiement à
-            la livraison, puis accès plateforme avec QR code dans le kit.
+            la livraison, puis accès plateforme avec QR code dans le pack.
           </p>
         </div>
         <form className="order-form">
@@ -244,7 +244,7 @@ export default function Home() {
           </label>
           <label>
             Package
-            <select name="package" defaultValue="Family Kit">
+            <select name="package" defaultValue="Family Pack">
               {packages.map((pack) => (
                 <option key={pack.name}>{pack.name}</option>
               ))}
