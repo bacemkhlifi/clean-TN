@@ -450,6 +450,31 @@ li::before {
   background: var(--red);
 }
 
+.success-page {
+  align-items: center;
+  display: grid;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.success-panel {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 26px 70px rgba(23, 33, 28, 0.14);
+  margin: 0 auto;
+  max-width: 720px;
+  padding: clamp(28px, 6vw, 58px);
+}
+
+.success-panel .brand {
+  margin-bottom: 42px;
+}
+
+.success-panel h1 {
+  font-size: clamp(38px, 6vw, 70px);
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .intro,
