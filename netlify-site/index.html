@@ -240,18 +240,29 @@
             la livraison, puis accès plateforme avec QR code dans le kit.
           </p>
         </div>
-        <form class="order-form">
+        <form
+          class="order-form"
+          id="order-form"
+          name="kit-order"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="kit-order" />
+          <p class="hidden-field">
+            <label>Do not fill this field <input name="bot-field" /></label>
+          </p>
           <label>
             Nom et prénom
-            <input type="text" name="name" placeholder="Votre nom" />
+            <input type="text" name="name" placeholder="Votre nom" required />
           </label>
           <label>
             Ville / quartier
-            <input type="text" name="city" placeholder="Tunis, Sfax, Sousse..." />
+            <input type="text" name="city" placeholder="Tunis, Sfax, Sousse..." required />
           </label>
           <label>
             Package
-            <select name="package">
+            <select name="package" required>
               <option>Starter Kit</option>
               <option selected>Family Kit</option>
               <option>Shop Kit</option>
@@ -260,11 +271,15 @@
           </label>
           <label>
             Téléphone
-            <input type="tel" name="phone" placeholder="+216 ..." />
+            <input type="tel" name="phone" placeholder="+216 ..." required />
           </label>
-          <button type="button">Envoyer la demande</button>
+          <button type="submit">Envoyer la demande</button>
         </form>
       </section>
     </main>
+    <div class="toast" id="order-toast" role="status" aria-live="polite">
+      Demande bien reçue. Nous allons vous appeler bientôt pour confirmation.
+    </div>
+    <script src="/order-form.js"></script>
   </body>
 </html>
