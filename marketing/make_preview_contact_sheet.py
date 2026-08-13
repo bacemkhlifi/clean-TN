@@ -4,11 +4,11 @@ import imageio.v2 as imageio
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-VIDEO = ROOT / "marketing" / "ndhaf-tounes-reel.mp4"
-OUT = ROOT / "marketing" / "ndhaf-tounes-reel-preview.jpg"
+VIDEO = ROOT / "marketing" / "ndhaf-tounes-reel-pro.mp4"
+OUT = ROOT / "marketing" / "ndhaf-tounes-reel-pro-preview.jpg"
 
 reader = imageio.get_reader(VIDEO)
-times = [1, 5, 10, 15, 20]
+times = [2, 7, 14, 22, 29]
 frames = []
 for second in times:
     frame = Image.fromarray(reader.get_data(second * 24)).resize((216, 384))
