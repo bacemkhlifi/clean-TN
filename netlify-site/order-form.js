@@ -1,6 +1,6 @@
 const form = document.querySelector("#order-form");
 const toast = document.querySelector("#order-toast");
-const ownerEmail = "toumiazz88@gmail.com";
+const whatsappNumber = "21653780888";
 
 function showToast(message, isError = false) {
   toast.textContent = message;
@@ -15,10 +15,9 @@ function encodeFormData(formData) {
   return new URLSearchParams(formData).toString();
 }
 
-function buildMailto(formData) {
-  const subject = "Nouvelle demande Ndhaf Tounes";
-  const body = [
-    "Nouvelle demande de commande:",
+function buildWhatsAppUrl(formData) {
+  const message = [
+    "Bonjour, je veux commander Ndhaf Tounes Kit.",
     "",
     `Nom: ${formData.get("name") || ""}`,
     `Ville / quartier: ${formData.get("city") || ""}`,
@@ -27,9 +26,19 @@ function buildMailto(formData) {
     `Email: ${formData.get("email") || ""}`,
   ].join("\n");
 
-  return `mailto:${ownerEmail}?subject=${encodeURIComponent(
-    subject
-  )}&body=${encodeURIComponent(body)}`;
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+}
+
+async function saveLeadInNetlify(formData) {
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encodeFormData(formData),
+    });
+  } catch {
+    // WhatsApp remains the primary order channel.
+  }
 }
 
 form?.addEventListener("submit", async (event) => {
@@ -37,32 +46,16 @@ form?.addEventListener("submit", async (event) => {
 
   const button = form.querySelector("button");
   const formData = new FormData(form);
+  const whatsappUrl = buildWhatsAppUrl(formData);
+
   button.disabled = true;
-  button.textContent = "Envoi en cours...";
+  button.textContent = "Ouverture WhatsApp...";
 
-  try {
-    const response = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeFormData(formData),
-    });
+  await saveLeadInNetlify(formData);
+  showToast("Demande bien recue. WhatsApp va s'ouvrir pour confirmer.");
+  window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 
-    if (!response.ok) {
-      throw new Error("Submission failed");
-    }
-
-    form.reset();
-    showToast(
-      "Demande bien recue. Nous allons vous appeler bientot pour confirmation."
-    );
-  } catch {
-    window.location.href = buildMailto(formData);
-    showToast(
-      "Votre application email va s'ouvrir pour nous envoyer la demande directement.",
-      true
-    );
-  } finally {
-    button.disabled = false;
-    button.textContent = "Envoyer la demande";
-  }
+  form.reset();
+  button.disabled = false;
+  button.textContent = "Commander sur WhatsApp";
 });
