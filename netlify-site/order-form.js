@@ -1,5 +1,6 @@
 const form = document.querySelector("#order-form");
 const toast = document.querySelector("#order-toast");
+const ownerEmail = "toumiazz88@gmail.com";
 
 function showToast(message, isError = false) {
   toast.textContent = message;
@@ -12,6 +13,23 @@ function showToast(message, isError = false) {
 
 function encodeFormData(formData) {
   return new URLSearchParams(formData).toString();
+}
+
+function buildMailto(formData) {
+  const subject = "Nouvelle demande Ndhaf Tounes";
+  const body = [
+    "Nouvelle demande de commande:",
+    "",
+    `Nom: ${formData.get("name") || ""}`,
+    `Ville / quartier: ${formData.get("city") || ""}`,
+    `Package: ${formData.get("package") || ""}`,
+    `Telephone: ${formData.get("phone") || ""}`,
+    `Email: ${formData.get("email") || ""}`,
+  ].join("\n");
+
+  return `mailto:${ownerEmail}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
 }
 
 form?.addEventListener("submit", async (event) => {
@@ -35,11 +53,12 @@ form?.addEventListener("submit", async (event) => {
 
     form.reset();
     showToast(
-      "Demande bien reçue. Nous allons vous appeler bientôt pour confirmation."
+      "Demande bien recue. Nous allons vous appeler bientot pour confirmation."
     );
   } catch {
+    window.location.href = buildMailto(formData);
     showToast(
-      "Une erreur est survenue. Merci de réessayer ou de nous contacter directement.",
+      "Votre application email va s'ouvrir pour nous envoyer la demande directement.",
       true
     );
   } finally {
