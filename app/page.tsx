@@ -5,15 +5,17 @@ const packages = [
     name: "Solo Pack",
     ar: "للبداية قدّام دارك",
     price: "28 د.ت",
-    delivery: "+ 7 د.ت livraison",
-    items: ["1 عصا التقاط", "سعر دخولي لربح السوق", "مناسب للدار أو الحانوت", "دفع عند التسليم"],
+    delivery: "+ 7 د.ت livraison = 35 د.ت total",
+    option: "Solo Pack - 28 DT + 7 DT livraison = 35 DT total",
+    items: ["1 عصا التقاط", "مناسب للدار أو الحانوت", "دفع عند التسليم"],
     tag: "Pour particuliers",
   },
   {
     name: "Duo Pack",
     ar: "انتي وشخص آخر",
     price: "45 د.ت",
-    delivery: "+ 7 د.ت livraison",
+    delivery: "+ 7 د.ت livraison = 52 د.ت total",
+    option: "Duo Pack - 45 DT + 7 DT livraison = 52 DT total",
     items: ["2 عصي التقاط", "أفضل قيمة للعائلة", "ممتاز كهدية للوالد أو الجد", "دفع عند التسليم"],
     tag: "Le plus demandé",
   },
@@ -21,7 +23,8 @@ const packages = [
     name: "Trio Pack",
     ar: "للدار، الحانوت، والعائلة",
     price: "59 د.ت",
-    delivery: "+ 7 د.ت livraison",
+    delivery: "+ 7 د.ت livraison = 66 د.ت total",
+    option: "Trio Pack - 59 DT + 7 DT livraison = 66 DT total",
     items: ["3 عصي التقاط", "لكل العائلة أو فريق صغير", "أكثر مردود مقابل السعر", "دفع عند التسليم"],
     tag: "Meilleur prix",
   },
@@ -29,7 +32,8 @@ const packages = [
     name: "Premium Pack",
     ar: "لتجربة التنظيف الكاملة",
     price: "39 د.ت",
-    delivery: "+ 7 د.ت livraison",
+    delivery: "+ 7 د.ت livraison = 46 د.ت total",
+    option: "Premium Pack - 39 DT + 7 DT livraison = 46 DT total",
     items: ["1 عصا التقاط", "1 زوج قفازات", "5 أكياس قوية", "QR للمنصة"],
     tag: "Pack complet",
   },
@@ -251,7 +255,7 @@ export default function Home() {
             Package
             <select name="package" defaultValue="Duo Pack">
               {packages.map((pack) => (
-                <option key={pack.name}>{pack.name}</option>
+                <option key={pack.name}>{pack.option}</option>
               ))}
             </select>
           </label>
