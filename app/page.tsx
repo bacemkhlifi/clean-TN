@@ -2,32 +2,36 @@ import Image from "next/image";
 
 const packages = [
   {
-    name: "Starter Pack",
+    name: "Solo Pack",
     ar: "للبداية قدّام دارك",
-    price: "39 د.ت",
-    items: ["1 عصا التقاط", "1 زوج قفازات", "5 أكياس قوية", "QR للمنصة"],
+    price: "28 د.ت",
+    delivery: "+ 7 د.ت livraison",
+    items: ["1 عصا التقاط", "سعر دخولي لربح السوق", "مناسب للدار أو الحانوت", "دفع عند التسليم"],
     tag: "Pour particuliers",
   },
   {
-    name: "Family Pack",
-    ar: "للعائلة والحومة",
-    price: "69 د.ت",
-    items: ["2 عصي التقاط", "2 أزواج قفازات", "15 كيس", "تحدّي عائلي"],
+    name: "Duo Pack",
+    ar: "انتي وشخص آخر",
+    price: "45 د.ت",
+    delivery: "+ 7 د.ت livraison",
+    items: ["2 عصي التقاط", "أفضل قيمة للعائلة", "ممتاز كهدية للوالد أو الجد", "دفع عند التسليم"],
     tag: "Le plus demandé",
   },
   {
-    name: "Shop Pack",
-    ar: "للحوانت والكافيهات",
+    name: "Trio Pack",
+    ar: "للدار، الحانوت، والعائلة",
     price: "59 د.ت",
-    items: ["1 عصا التقاط", "1 زوج قفازات", "20 كيس", "Sticker واجهة نظيفة"],
-    tag: "Pour commerces",
+    delivery: "+ 7 د.ت livraison",
+    items: ["3 عصي التقاط", "لكل العائلة أو فريق صغير", "أكثر مردود مقابل السعر", "دفع عند التسليم"],
+    tag: "Meilleur prix",
   },
   {
-    name: "Community Pack",
-    ar: "للمدارس والجمعيات",
-    price: "Sur devis",
-    items: ["10 عصي التقاط", "100 كيس", "حساب جماعي", "Leaderboard خاص"],
-    tag: "Associations",
+    name: "Premium Pack",
+    ar: "لتجربة التنظيف الكاملة",
+    price: "39 د.ت",
+    delivery: "+ 7 د.ت livraison",
+    items: ["1 عصا التقاط", "1 زوج قفازات", "5 أكياس قوية", "QR للمنصة"],
+    tag: "Pack complet",
   },
 ];
 
@@ -68,9 +72,9 @@ export default function Home() {
             <span className="eyebrow">تحدّي نظّف قدّام دارك</span>
             <h1>نظّف قدّام دارك، تونس تولّي أنظف.</h1>
             <p>
-              Un pack simple pour nettoyer devant votre maison, boutique ou
-              quartier: pince de ramassage, gants, sacs, photos avant/après et
-              points sur notre plateforme.
+              Une pince pratique pour nettoyer devant votre maison, boutique ou
+              quartier. Choisissez l'offre simple ou le Premium Pack avec gants,
+              sacs, photos avant/après et points sur notre plateforme.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#order">
@@ -122,18 +126,18 @@ export default function Home() {
           />
         </div>
         <div>
-          <p className="section-kicker">Dans chaque pack</p>
-          <h2>كل باك فيه نفس العصا القوية</h2>
+          <p className="section-kicker">Offre simple + Premium</p>
+          <h2>نفس العصا القوية، والباك الكامل بزيادة</h2>
           <p>
-            Les différences entre packages sont le nombre de pinces, gants,
-            sacs et l'usage: maison, famille, commerce ou groupe. La qualité de
-            la pince reste la même dans tous les packs.
+            Les packs Solo, Duo et Trio contiennent les pinces de ramassage. Le
+            Premium Pack ajoute les gants, les sacs solides et le QR plateforme
+            pour participer au challenge.
           </p>
           <div className="kit-list">
             <span>Pince de ramassage</span>
-            <span>Gants</span>
-            <span>Sacs solides</span>
-            <span>QR plateforme</span>
+            <span>Duo & Trio disponibles</span>
+            <span>Premium: gants + sacs</span>
+            <span>QR plateforme Premium</span>
           </div>
         </div>
       </section>
@@ -168,6 +172,7 @@ export default function Home() {
                 <p>{pack.ar}</p>
               </div>
               <strong>{pack.price}</strong>
+              <small>{pack.delivery}</small>
               <ul>
                 {pack.items.map((item) => (
                   <li key={item}>{item}</li>
@@ -244,7 +249,7 @@ export default function Home() {
           </label>
           <label>
             Package
-            <select name="package" defaultValue="Family Pack">
+            <select name="package" defaultValue="Duo Pack">
               {packages.map((pack) => (
                 <option key={pack.name}>{pack.name}</option>
               ))}

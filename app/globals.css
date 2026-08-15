@@ -332,6 +332,14 @@ p {
   font-size: 34px;
 }
 
+.package-card small {
+  color: var(--muted);
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: -16px;
+}
+
 ul {
   list-style: none;
   margin: 0;
