@@ -262,7 +262,8 @@ p {
 
 .steps,
 .package-grid,
-.audience-grid {
+.audience-grid,
+.usage-grid {
   display: grid;
   gap: 18px;
 }
@@ -301,6 +302,66 @@ p {
 .package-grid,
 .audience-grid {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.usage-grid {
+  grid-template-columns: 1.25fr repeat(3, 1fr);
+}
+
+.usage-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  overflow: hidden;
+}
+
+.usage-card img {
+  aspect-ratio: 1 / 1;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.usage-card h3,
+.usage-card p,
+.usage-card span {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.usage-card h3 {
+  margin-top: 18px;
+}
+
+.usage-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.usage-card span {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.usage-card.large {
+  background: var(--green-dark);
+  color: white;
+}
+
+.usage-card.large img {
+  aspect-ratio: 1.25 / 1;
+}
+
+.usage-card.large p,
+.usage-card.large span {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .package-card {
@@ -502,8 +563,13 @@ li::before {
 
   .steps,
   .package-grid,
-  .audience-grid {
+  .audience-grid,
+  .usage-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usage-card.large {
+    grid-column: 1 / -1;
   }
 }
 
@@ -533,8 +599,13 @@ li::before {
 
   .steps,
   .package-grid,
-  .audience-grid {
+  .audience-grid,
+  .usage-grid {
     grid-template-columns: 1fr;
+  }
+
+  .usage-card {
+    min-height: auto;
   }
 
   .package-card,

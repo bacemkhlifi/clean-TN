@@ -55,6 +55,45 @@ const rewards = [
   "Challenges للعائلات، الحوانت، والمدارس",
 ];
 
+const usageCards = [
+  {
+    image: "/usage/home-floor.gif",
+    alt: "Utiliser la pince pour ramasser un objet au sol sans se baisser",
+    title: "Sans se baisser",
+    text: "Pratique pour les parents, les seniors et toute personne qui veut éviter l'effort inutile.",
+  },
+  {
+    image: "/usage/garden-clean.gif",
+    alt: "Ramasser des déchets dans le jardin avec la pince",
+    title: "Jardin & terrasse",
+    text: "Ramasser bouteilles, papier et plastique devient plus rapide et plus propre.",
+  },
+  {
+    image: "/usage/high-shelf.gif",
+    alt: "Atteindre une étagère haute avec la pince",
+    title: "Atteindre plus loin",
+    text: "Pour les étagères, dessous des meubles, coins hauts et endroits difficiles.",
+  },
+  {
+    image: "/usage/mobility-helper.webp",
+    alt: "Personne senior utilisant une pince de ramassage à la maison",
+    title: "Cadeau utile",
+    text: "Une idée simple pour aider vos parents à ramasser les objets sans fatigue.",
+  },
+  {
+    image: "/usage/car-reach.webp",
+    alt: "Utiliser la pince pour atteindre un objet près de la voiture",
+    title: "Voiture & garage",
+    text: "Attraper ce qui tombe sous la voiture, près du garage ou dans les coins étroits.",
+  },
+  {
+    image: "/usage/pickup-demo.webp",
+    alt: "Démonstration de la pince qui ramasse un objet",
+    title: "Geste rapide",
+    text: "Un clic, tu ramasses. Plus propre, plus facile, plus confortable.",
+  },
+];
+
 export default function Home() {
   return (
     <main>
@@ -66,6 +105,7 @@ export default function Home() {
           </a>
           <div className="nav-links">
             <a href="#packages">Packages</a>
+            <a href="#usages">Usages</a>
             <a href="#points">Points</a>
             <a href="#order">Commander</a>
           </div>
@@ -143,6 +183,38 @@ export default function Home() {
             <span>Premium: gants + sacs</span>
             <span>QR plateforme Premium</span>
           </div>
+        </div>
+      </section>
+
+      <section className="section life-helper" id="usages">
+        <div className="section-heading">
+          <p className="section-kicker">Plus qu'une pince</p>
+          <h2>تسهّل الحياة كل يوم، موش كان للتنظيف.</h2>
+          <p>
+            La même pince aide à ramasser sans se baisser, atteindre les coins
+            difficiles, ranger la maison et aider les parents ou grands-parents
+            dans les gestes du quotidien.
+          </p>
+        </div>
+        <div className="usage-grid">
+          <article className="usage-card large">
+            <img
+              src="/usage/product-details.webp"
+              alt="Pince de ramassage pliable avec poignée ergonomique"
+            />
+            <div>
+              <span>Outil nécessaire</span>
+              <h3>Nettoyage, maison, jardin, boutique</h3>
+              <p>خفيفة، طويلة، وتعاونك تشدّ الحاجة من غير ما تتعب ظهرك.</p>
+            </div>
+          </article>
+          {usageCards.map((usage) => (
+            <article className="usage-card" key={usage.title}>
+              <img src={usage.image} alt={usage.alt} />
+              <h3>{usage.title}</h3>
+              <p>{usage.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -253,7 +325,7 @@ export default function Home() {
           </label>
           <label>
             Package
-            <select name="package" defaultValue="Duo Pack">
+            <select name="package" defaultValue={packages[1].option}>
               {packages.map((pack) => (
                 <option key={pack.name}>{pack.option}</option>
               ))}
