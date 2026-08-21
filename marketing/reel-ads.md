@@ -1,4 +1,4 @@
-# Ndhaf Tounes Reel Ads
+# Cleano Reel Ads
 
 ## Reel 1: Main Sales Reel
 
@@ -21,7 +21,7 @@ Do not sell only a trash grabber. Sell a simple action:
 ```text
 شنوة يصير كان كل واحد فينا ينظّف 10 دقايق قدّام دارو؟
 
-مع Ndhaf Tounes Pack، عندك عصا التقاط، قفازات، وأكياس.
+مع Cleano Pack، عندك عصا التقاط، قفازات، وأكياس.
 
 تنظّف بلا ما تلمس الزبلة، بلا تعب، وبطريقة سهلة.
 
@@ -78,7 +78,7 @@ Pack فيه عصا + قفازات + أكياس
 ما تستناش شكون ينظّف.
 10 دقايق قدّام دارك تنجم تبدّل الحومة.
 
-مع Ndhaf Tounes Pack: عصا التقاط، قفازات، أكياس، وتحدّي نقاط.
+مع Cleano Pack: عصا التقاط، قفازات، أكياس، وتحدّي نقاط.
 
 نظّف قدّام دارك، تونس تولّي أنظف.
 ```
@@ -86,7 +86,7 @@ Pack فيه عصا + قفازات + أكياس
 Hashtags:
 
 ```text
-#NdhafTounes #نظف_تونس #TunisiePropre #تونس_نظيفة #CleanTunisia
+#CleanoTN #نظف_تونس #TunisiePropre #تونس_نظيفة #CleanTunisia
 ```
 
 ## Reel 2: Retired Dad Gift Angle
@@ -105,7 +105,7 @@ Length: 20 seconds
 ```text
 ما عندكش وقت تنظّف قدّام دارك؟
 
-أهدي Ndhaf Tounes Pack لبوك ولا جدك.
+أهدي Cleano Pack لبوك ولا جدك.
 
 حركة خفيفة، نشاط، وفرحة بالمساهمة.
 

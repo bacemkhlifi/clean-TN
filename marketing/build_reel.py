@@ -10,7 +10,7 @@ from bidi.algorithm import get_display
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "marketing" / "video-assets"
-OUT = ROOT / "marketing" / "ndhaf-tounes-reel.mp4"
+OUT = ROOT / "marketing" / "cleano-reel.mp4"
 W, H = 1080, 1920
 FPS = 24
 
@@ -93,7 +93,7 @@ def draw_brand(frame):
     draw_rounded_box(draw, (x, y, x + 360, y + 72), 36, (255, 255, 255, 228))
     draw.ellipse((x + 14, y + 12, x + 62, y + 60), fill=(19, 143, 93, 255))
     draw.text((x + 38, y + 49), shape("ن"), font=font(30, bold=True), fill="white", anchor="mm")
-    draw.text((x + 82, y + 48), "Ndhaf Tounes", font=font(28, bold=True), fill=(23, 33, 28), anchor="lm")
+    draw.text((x + 82, y + 48), "Cleano", font=font(28, bold=True), fill=(23, 33, 28), anchor="lm")
     return Image.alpha_composite(frame.convert("RGBA"), overlay).convert("RGB")
 
 
@@ -102,7 +102,7 @@ def draw_end_card(frame):
     draw = ImageDraw.Draw(overlay)
     draw.rectangle((0, 0, W, H), fill=(0, 0, 0, 58))
     draw_rounded_box(draw, (72, 1240, W - 72, 1705), 30, (255, 250, 240, 238))
-    draw.text((W / 2, 1325), "Ndhaf Tounes", font=font(62, bold=True), fill=(23, 33, 28), anchor="mm")
+    draw.text((W / 2, 1325), "Cleano", font=font(62, bold=True), fill=(23, 33, 28), anchor="mm")
     draw.text((W / 2, 1415), shape("نظّف قدّام دارك"), font=font(64, bold=True), fill=(15, 93, 67), anchor="mm")
     draw.text((W / 2, 1500), shape("تونس تولّي أنظف"), font=font(58, bold=True), fill=(215, 25, 32), anchor="mm")
     draw_rounded_box(draw, (208, 1568, W - 208, 1648), 18, (215, 25, 32, 255))

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ndhaf Tounes | نظّف تونس",
+  title: "Cleano | نظّف تونس",
   description:
     "Pack de nettoyage et challenge citoyen pour rendre la Tunisie plus propre, rue par rue.",
   icons: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "Ndhaf Tounes | نظّف قدّام دارك",
+    title: "Cleano | نظّف قدّام دارك",
     description:
       "Achetez le pack, nettoyez votre quartier, ajoutez vos photos avant/après et gagnez des points.",
     images: ["/clean-tunisia-hero.png"],

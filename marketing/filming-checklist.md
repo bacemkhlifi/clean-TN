@@ -31,4 +31,4 @@ Use vertical video only.
 - Captions: always on screen
 - Music: low volume
 - Voiceover: clear Tunisian Arabic
-- End card: Ndhaf Tounes + website/order message
+- End card: Cleano + website/order message

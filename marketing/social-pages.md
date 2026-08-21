@@ -1,15 +1,15 @@
-# Ndhaf Tounes Social Pages
+# Cleano Social Pages
 
 ## Brand Name
 
-Primary: **Ndhaf Tounes**
+Primary: **Cleano**
 
 Arabic display option: **نظّف تونس**
 
 Handle ideas:
 
-- `@ndhaf.tounes`
-- `@ndhaf_tounes`
+- `@cleano.tn`
+- `@cleanotn`
 - `@clean.tunisia`
 - `@tounes.clean`
 
@@ -17,7 +17,7 @@ Handle ideas:
 
 Category: Product/service or Community service
 
-Page name: **Ndhaf Tounes - نظّف تونس**
+Page name: **Cleano - نظّف تونس**
 
 Bio:
 
@@ -25,7 +25,7 @@ Bio:
 
 About:
 
-> Ndhaf Tounes est un projet citoyen et pratique: on fournit un pack simple avec pince de ramassage, gants et sacs pour nettoyer devant sa maison, son commerce ou son quartier. Chaque sac rempli peut devenir des points sur notre plateforme avec des photos avant/après. Le but: rendre la Tunisie plus propre, rue par rue.
+> Cleano est un projet citoyen et pratique: on fournit un pack simple avec pince de ramassage, gants et sacs pour nettoyer devant sa maison, son commerce ou son quartier. Chaque sac rempli peut devenir des points sur notre plateforme avec des photos avant/après. Le but: rendre la Tunisie plus propre, rue par rue.
 
 CTA button: **Send WhatsApp Message** or **Shop Now**
 
@@ -33,13 +33,13 @@ Pinned post:
 
 > شنوة يصير كان كل تونسي ينظّف 10 دقايق قدّام دارو؟
 >
-> مع Ndhaf Tounes، تبدأ بحركة صغيرة: عصا التقاط، قفازات، أكياس، وصور قبل/بعد. كل كيس معمّر يعطيك نقاط ويعاون حومتك تولّي أنظف.
+> مع Cleano، تبدأ بحركة صغيرة: عصا التقاط، قفازات، أكياس، وصور قبل/بعد. كل كيس معمّر يعطيك نقاط ويعاون حومتك تولّي أنظف.
 >
 > نظّف قدّام دارك، تونس تولّي أنظف.
 
 ## Instagram Page
 
-Name: **Ndhaf Tounes | نظّف تونس**
+Name: **Cleano | نظّف تونس**
 
 Bio:
 
@@ -56,7 +56,7 @@ First post caption:
 >
 > Le pack contient: pince de ramassage, gants, sacs et accès plateforme.
 >
-> #NdhafTounes #TunisiePropre #تونس_نظيفة #CleanTunisia
+> #CleanoTN #TunisiePropre #تونس_نظيفة #CleanTunisia
 
 Story highlights:
 
@@ -68,7 +68,7 @@ Story highlights:
 
 ## TikTok Page
 
-Name: **Ndhaf Tounes**
+Name: **Cleano**
 
 Bio:
 
@@ -78,7 +78,7 @@ Bio:
 
 First TikTok caption:
 
-> ما تستناش شكون ينظّف. تونس تبدأ من قدّام دارك. #NdhafTounes #Tunisie #CleanChallenge
+> ما تستناش شكون ينظّف. تونس تبدأ من قدّام دارك. #CleanoTN #Tunisie #CleanChallenge
 
 ## First 7 Content Ideas
 
@@ -92,4 +92,4 @@ First TikTok caption:
 
 ## Hashtags
 
-`#NdhafTounes #نظف_تونس #TunisiePropre #CleanTunisia #تونس_نظيفة #CleanChallenge #BeforeAfter #حومتي_نظيفة`
+`#CleanoTN #نظف_تونس #TunisiePropre #CleanTunisia #تونس_نظيفة #CleanChallenge #BeforeAfter #حومتي_نظيفة`

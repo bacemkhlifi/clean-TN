@@ -13,10 +13,10 @@ import imageio_ffmpeg
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "marketing" / "video-assets"
-OUT_SILENT = ROOT / "marketing" / "ndhaf-tounes-reel-pro-silent.mp4"
+OUT_SILENT = ROOT / "marketing" / "cleano-reel-pro-silent.mp4"
 VOICE = ROOT / "marketing" / "voiceover-ar-female.mp3"
 MUSIC = ROOT / "marketing" / "music-bed.wav"
-OUT = ROOT / "marketing" / "ndhaf-tounes-reel-pro.mp4"
+OUT = ROOT / "marketing" / "cleano-reel-pro.mp4"
 W, H = 1080, 1920
 FPS = 24
 FONT_BOLD = "C:/Windows/Fonts/tahomabd.ttf"
@@ -74,7 +74,7 @@ def draw_brand(frame):
     rounded(draw, (x, y, x + 332, y + 72), 36, (255, 255, 255, 232))
     draw.ellipse((x + 14, y + 12, x + 62, y + 60), fill=(19, 143, 93, 255))
     draw.text((x + 38, y + 48), shape("ن"), font=font(30, bold=True), fill="white", anchor="mm")
-    draw.text((x + 82, y + 48), "Ndhaf Tounes", font=font(27, bold=True), fill=(23, 33, 28), anchor="lm")
+    draw.text((x + 82, y + 48), "Cleano", font=font(27, bold=True), fill=(23, 33, 28), anchor="lm")
     return Image.alpha_composite(frame.convert("RGBA"), overlay).convert("RGB")
 
 
@@ -106,7 +106,7 @@ def draw_end_card(frame):
     draw = ImageDraw.Draw(overlay)
     draw.rectangle((0, 0, W, H), fill=(0, 0, 0, 66))
     rounded(draw, (68, 1218, W - 68, 1716), 32, (255, 250, 240, 244))
-    draw.text((W / 2, 1300), "Ndhaf Tounes", font=font(64, bold=True), fill=(23, 33, 28), anchor="mm")
+    draw.text((W / 2, 1300), "Cleano", font=font(64, bold=True), fill=(23, 33, 28), anchor="mm")
     draw.text((W / 2, 1394), shape("نظّف قدّام دارك"), font=font(68, bold=True), fill=(15, 93, 67), anchor="mm")
     draw.text((W / 2, 1486), shape("تونس تولّي أنظف"), font=font(62, bold=True), fill=(215, 25, 32), anchor="mm")
     rounded(draw, (196, 1572, W - 196, 1654), 18, (215, 25, 32, 255))
@@ -127,7 +127,7 @@ scenes = [
         "path": "scene-02-kit.png",
         "duration": 5.4,
         "main": "أنا نبدأ من قدّام داري",
-        "sub": "Ndhaf Tounes Pack",
+        "sub": "Cleano Pack",
         "position": "bottom",
         "shift": (0.0, 0.02),
     },

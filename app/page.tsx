@@ -99,9 +99,9 @@ export default function Home() {
     <main>
       <section className="hero" id="top">
         <nav className="nav" aria-label="Navigation principale">
-          <a className="brand" href="#top" aria-label="Ndhaf Tounes accueil">
+          <a className="brand" href="#top" aria-label="Cleano accueil">
             <span className="brand-mark">ن</span>
-            <span>Ndhaf Tounes</span>
+            <span>Cleano</span>
           </a>
           <div className="nav-links">
             <a href="#packages">Packages</a>
@@ -164,7 +164,7 @@ export default function Home() {
         <div className="kit-image">
           <Image
             src="/kit-product.png"
-            alt="Ndhaf Tounes pack avec pince de ramassage, gants, sacs et carte QR"
+            alt="Cleano Pack avec pince de ramassage, gants, sacs et carte QR"
             fill
             sizes="(max-width: 900px) 100vw, 46vw"
           />
