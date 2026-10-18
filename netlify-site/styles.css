@@ -299,9 +299,13 @@ p {
   width: 38px;
 }
 
-.package-grid,
 .audience-grid {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.package-grid {
+  grid-template-columns: minmax(280px, 460px);
+  justify-content: center;
 }
 
 .usage-grid {

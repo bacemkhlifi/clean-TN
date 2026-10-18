@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Cleano | نظّف تونس",
   description:
-    "Pack de nettoyage et challenge citoyen pour rendre la Tunisie plus propre, rue par rue.",
+    "Pince de ramassage pliable Cleano: ramassez sans vous baisser et sans toucher les déchets.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cleano | نظّف قدّام دارك",
     description:
-      "Achetez le pack, nettoyez votre quartier, ajoutez vos photos avant/après et gagnez des points.",
-    images: ["/clean-tunisia-hero.png"],
+      "Un outil pratique pour la maison, la boutique et le quartier. 43 DT livraison comprise.",
+    images: ["/usage/product-details.webp"],
   },
 };
 

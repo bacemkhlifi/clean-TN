@@ -39,3 +39,5 @@ yarn-error.log*
 /outputs/
 /work/
 /tmp/
+/.video_deps/
+/marketing/validation-ads/output/

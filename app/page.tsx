@@ -2,57 +2,21 @@ import Image from "next/image";
 
 const packages = [
   {
-    name: "Solo Pack",
-    ar: "للبداية قدّام دارك",
-    price: "28 د.ت",
-    delivery: "+ 7 د.ت livraison = 35 د.ت total",
-    option: "Solo Pack - 28 DT + 7 DT livraison = 35 DT total",
-    items: ["1 عصا التقاط", "مناسب للدار أو الحانوت", "دفع عند التسليم"],
-    tag: "Pour particuliers",
-  },
-  {
-    name: "Duo Pack",
-    ar: "انتي وشخص آخر",
-    price: "45 د.ت",
-    delivery: "+ 7 د.ت livraison = 52 د.ت total",
-    option: "Duo Pack - 45 DT + 7 DT livraison = 52 DT total",
-    items: ["2 عصي التقاط", "أفضل قيمة للعائلة", "ممتاز كهدية للوالد أو الجد", "دفع عند التسليم"],
-    tag: "Le plus demandé",
-  },
-  {
-    name: "Trio Pack",
-    ar: "للدار، الحانوت، والعائلة",
-    price: "59 د.ت",
-    delivery: "+ 7 د.ت livraison = 66 د.ت total",
-    option: "Trio Pack - 59 DT + 7 DT livraison = 66 DT total",
-    items: ["3 عصي التقاط", "لكل العائلة أو فريق صغير", "أكثر مردود مقابل السعر", "دفع عند التسليم"],
-    tag: "Meilleur prix",
-  },
-  {
-    name: "Premium Pack",
-    ar: "لتجربة التنظيف الكاملة",
-    price: "39 د.ت",
-    delivery: "+ 7 د.ت livraison = 46 د.ت total",
-    option: "Premium Pack - 39 DT + 7 DT livraison = 46 DT total",
-    items: ["1 عصا التقاط", "1 زوج قفازات", "5 أكياس قوية", "QR للمنصة"],
-    tag: "Pack complet",
+    name: "Cleano Grabber",
+    ar: "تنظّف وتشدّ الحاجة من غير ما تنحني",
+    price: "35 د.ت",
+    delivery: "+ 8 د.ت livraison = 43 د.ت total",
+    option: "Cleano Grabber - 35 DT + 8 DT livraison = 43 DT total",
+    items: ["1 عصا التقاط قابلة للطي", "للتنظيف والاستعمال اليومي", "دفع عند التسليم"],
+    tag: "Offre lancement",
   },
 ];
 
 const steps = [
-  ["Acheter le pack", "اختار الباك اللي يناسبك"],
-  ["Nettoyer 10 minutes", "نظّف قدّام دارك، حانوتك، ولا حومتك"],
-  ["Photo avant / après", "صوّر قبل وبعد باش نثبتو الخدمة"],
-  ["Gagner des points", "كل كيس معمّر يعطيك نقاط ومكانة في الترتيب"],
-];
-
-const rewards = [
-  "نقاط على كل كيس زبلة معمّر",
-  "Badges: Clean Hero, Champion de quartier",
-  "Classement par ville et quartier",
-  "Coupons من sponsors وشركاء محليين",
-  "Certificat شهري لأكثر ناس نشيطة",
-  "Challenges للعائلات، الحوانت، والمدارس",
+  ["Commander", "عمّر الطلب على الموقع"],
+  ["Confirmer", "نعيطولك باش نثبتو العنوان والمبلغ"],
+  ["Recevoir", "تخلّص 43 د عند التسليم"],
+  ["Commencer", "استعملها في الدار، الحانوت، ولا قدّام بابك"],
 ];
 
 const usageCards = [
@@ -104,9 +68,9 @@ export default function Home() {
             <span>Cleano</span>
           </a>
           <div className="nav-links">
-            <a href="#packages">Packages</a>
+            <a href="#packages">Offre</a>
             <a href="#usages">Usages</a>
-            <a href="#points">Points</a>
+            <a href="#mission">Mission</a>
             <a href="#order">Commander</a>
           </div>
         </nav>
@@ -116,9 +80,8 @@ export default function Home() {
             <span className="eyebrow">تحدّي نظّف قدّام دارك</span>
             <h1>نظّف قدّام دارك، تونس تولّي أنظف.</h1>
             <p>
-              Une pince pratique pour nettoyer devant votre maison, boutique ou
-              quartier. Choisissez l'offre simple ou le Premium Pack avec gants,
-              sacs, photos avant/après et points sur notre plateforme.
+              La pince pliable qui aide à ramasser sans se baisser et sans
+              toucher les déchets. Pour la maison, la boutique et le quartier.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#order">
@@ -130,15 +93,15 @@ export default function Home() {
             </div>
             <div className="proof-strip" aria-label="Arguments principaux">
               <span>10 minutes</span>
-              <span>Avant / Après</span>
-              <span>Points & récompenses</span>
+              <span>Sans se baisser</span>
+              <span>Paiement à la livraison</span>
             </div>
           </div>
 
           <div className="hero-media">
             <Image
-              src="/clean-tunisia-hero.png"
-              alt="Pack de nettoyage avec pince, gants et sacs utilisé dans une rue tunisienne"
+              src="/usage/product-details.webp"
+              alt="Pince de ramassage pliable Cleano"
               fill
               priority
               sizes="(max-width: 900px) 100vw, 52vw"
@@ -153,35 +116,33 @@ export default function Home() {
           <h2>مش عصا التقاط برك. حركة صغيرة تعمل فرق كبير.</h2>
         </div>
         <p>
-          Le message est simple: si chaque personne nettoie devant sa porte,
-          son magasin ou son immeuble, la Tunisie devient plus propre rue par
-          rue. Le pack transforme cette action en activité facile, utile et même
-          agréable pour la famille.
+          Le message est simple: un outil pratique facilite le geste. Si chaque
+          personne nettoie devant sa porte, son magasin ou son immeuble, la
+          Tunisie devient plus propre rue par rue.
         </p>
       </section>
 
       <section className="section kit-showcase">
         <div className="kit-image">
           <Image
-            src="/kit-product.png"
-            alt="Cleano Pack avec pince de ramassage, gants, sacs et carte QR"
+            src="/usage/pickup-demo.webp"
+            alt="Démonstration de la pince de ramassage Cleano"
             fill
             sizes="(max-width: 900px) 100vw, 46vw"
           />
         </div>
         <div>
-          <p className="section-kicker">Offre simple + Premium</p>
-          <h2>نفس العصا القوية، والباك الكامل بزيادة</h2>
+          <p className="section-kicker">Un seul outil, plusieurs usages</p>
+          <h2>خفيفة، قابلة للطي، وسهلة الاستعمال</h2>
           <p>
-            Les packs Solo, Duo et Trio contiennent les pinces de ramassage. Le
-            Premium Pack ajoute les gants, les sacs solides et le QR plateforme
-            pour participer au challenge.
+            La pince Cleano sert à ramasser les déchets, atteindre les objets au
+            sol, accéder sous les meubles et faciliter les gestes du quotidien.
           </p>
           <div className="kit-list">
-            <span>Pince de ramassage</span>
-            <span>Duo & Trio disponibles</span>
-            <span>Premium: gants + sacs</span>
-            <span>QR plateforme Premium</span>
+            <span>Pliable et légère</span>
+            <span>Sans toucher les déchets</span>
+            <span>Maison, jardin, boutique</span>
+            <span>Utile pour les parents</span>
           </div>
         </div>
       </section>
@@ -221,7 +182,7 @@ export default function Home() {
       <section className="section how" id="how">
         <div className="section-heading">
           <p className="section-kicker">Comment ça marche</p>
-          <h2>من الباك إلى النقاط في 4 خطوات</h2>
+          <h2>من الطلب للاستعمال في 4 خطوات</h2>
         </div>
         <div className="steps">
           {steps.map(([fr, ar], index) => (
@@ -237,7 +198,7 @@ export default function Home() {
       <section className="section packages" id="packages">
         <div className="section-heading">
           <p className="section-kicker">Nos offres</p>
-          <h2>Packages prêts للبيع</h2>
+          <h2>عرض واضح، من غير مفاجآت</h2>
         </div>
         <div className="package-grid">
           {packages.map((pack) => (
@@ -260,22 +221,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section split" id="points">
+      <section className="section split" id="mission">
         <div className="panel dark">
-          <p className="section-kicker">Plateforme</p>
-          <h2>كل كيس معمّر = نقاط</h2>
+          <p className="section-kicker">Mission Cleano</p>
+          <h2>النظافة تبدأ من قدّام بابنا</h2>
           <p>
-            Le client ajoute une photo avant, une photo après, la ville, le
-            quartier et le nombre de sacs remplis. Après validation, il gagne
-            des points et monte dans le classement.
+            Une action simple répétée par plusieurs personnes peut transformer
+            une rue, une cité puis tout un quartier.
           </p>
         </div>
         <div className="panel rewards">
-          <h3>Rewards à développer</h3>
+          <h3>Pourquoi Cleano?</h3>
           <ul>
-            {rewards.map((reward) => (
-              <li key={reward}>{reward}</li>
-            ))}
+            <li>نشجّعو المبادرة من غير لوم</li>
+            <li>نخلّيو التنظيف أسهل وأسرع</li>
+            <li>نبدأو بالدار والحانوت والحومة</li>
+            <li>نبيّنو النتيجة قبل وبعد</li>
           </ul>
         </div>
       </section>
@@ -300,7 +261,7 @@ export default function Home() {
           </article>
           <article>
             <h3>Écoles & associations</h3>
-            <p>Challenges جماعية، points par équipe, et impact visible.</p>
+            <p>Activités جماعية ونتيجة واضحة قدّام المدرسة أو الجمعية.</p>
           </article>
         </div>
       </section>
@@ -310,8 +271,8 @@ export default function Home() {
           <p className="section-kicker">Commander maintenant</p>
           <h2>Prêt باش تبدأ تحدّي النظافة؟</h2>
           <p>
-            Version lancement: commande par téléphone ou WhatsApp, paiement à
-            la livraison, puis accès plateforme avec QR code dans le pack.
+            Commandez directement sur le site. Nous vous appelons pour confirmer
+            l'adresse. Paiement à la livraison: 43 DT au total.
           </p>
         </div>
         <form className="order-form">
@@ -324,8 +285,8 @@ export default function Home() {
             <input type="text" name="city" placeholder="Tunis, Sfax, Sousse..." />
           </label>
           <label>
-            Package
-            <select name="package" defaultValue={packages[1].option}>
+            Produit
+            <select name="package" defaultValue={packages[0].option}>
               {packages.map((pack) => (
                 <option key={pack.name}>{pack.option}</option>
               ))}
@@ -342,28 +303,28 @@ export default function Home() {
       <section className="section faq">
         <div className="section-heading">
           <p className="section-kicker">Questions</p>
-          <h2>À préparer avant le lancement</h2>
+          <h2>Les réponses avant de commander</h2>
         </div>
         <div className="faq-grid">
           <article>
-            <h3>Comment vérifier les photos?</h3>
+            <h3>Quel est le montant total?</h3>
             <p>
-              Au début, validation manuelle par admin. Après, ajouter GPS,
-              date, et contrôle anti-duplication.
+              35 DT pour la pince et 8 DT pour la livraison, soit 43 DT à payer
+              au total.
             </p>
           </article>
           <article>
-            <h3>Où vont les sacs remplis?</h3>
+            <h3>Comment payer?</h3>
             <p>
-              Définir des points de dépôt ou partenaires locaux pour collecte
-              et recyclage quand possible.
+              Le paiement se fait à la livraison, après confirmation de votre
+              commande par téléphone.
             </p>
           </article>
           <article>
-            <h3>Quel ton marketing?</h3>
+            <h3>Où utiliser la pince?</h3>
             <p>
-              Positif, fier, familial. On évite la culpabilité: on vend une
-              action facile qui donne du plaisir et du résultat.
+              À la maison, au jardin, dans la boutique, sous les meubles ou pour
+              ramasser des déchets sans les toucher.
             </p>
           </article>
         </div>

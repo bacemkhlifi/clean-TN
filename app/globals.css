@@ -317,7 +317,8 @@ p {
 }
 
 .package-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: minmax(280px, 460px);
+  justify-content: center;
 }
 
 .usage-grid {
